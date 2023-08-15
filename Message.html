@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Mono:wght@100&family=Josefin+Sans&family=Lugrasimo&family=Outfit:wght@100&family=Play:wght@700&family=Roboto+Mono:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Mono:wght@100&family=Indie+Flower&family=Josefin+Sans&family=Lugrasimo&family=Outfit:wght@100&family=Play:wght@700&family=Roboto+Mono:ital,wght@0,500;1,100&family=Satisfy&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body { 
+    background-image: url(https://wallpapertag.com/wallpaper/full/a/f/5/476041-cool-cream-colored-backgrounds-2880x1800-laptop.jpg);
+    background-size: cover;
+    font-family: 'Lugrasimo', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Play', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Satisfy', cursive;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 85px;
+  }
+
+  h2 {
+    font-size : 30px
+  }
+
+  h3 {
+    font-size: 20px
+  }
+
+  p {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  }
+
+  .colored-text {
+    background-color: #000000; /* Choose your background color */
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 18px;
+  }
+
+  .centered-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px; /* Add padding as needed */
+}
+
+  .line-container {
+    width: 1000px;
+    height: 9px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .line-left, .line-right {
+    width: 47%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+  }
+
+  .line-left {
+    left: 0;
+    margin-right: 100px;
+  }
+
+  .line-right {
+    right: 0;
+    margin-left: 100px;
+  }
+  
+  .diamond {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 35px;
+    background-color: #000000;
+    clip-path: polygon(
+    50% 0%,
+    100% 50%,
+    50% 100%,
+    0% 50%
+  );
+    z-index: 1; /* Position the star in front of the lines */
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+
+  .flex-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: absolute;
+  left: 43%;
+  transform: translateX(-50%);
+  
+}
+.column-1 h2:nth-child(1) {
+  margin-top: 30px;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 56%;
+  transform: translateX(-50%);
+}
+.column-2 h3 {
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+/* Adjust margins to align with column 1 numbers */
+.column-2 h3:nth-child(1) {
+  margin-top: 1px;
+}
+
+.column-2 h3:nth-child(2) {
+  margin-top: 25px;
+}
+
+.column-2 h3:nth-child(3) {
+  margin-top: 66px;
+}
+
+.column-2 h3:nth-child(4) {
+  margin-top: 65px;
+}
+
+.column-2 h3:nth-child(5) {
+  margin-top: 63px;
+}
+
+.column-2 h3:nth-child(6) {
+  margin-top: 60px;
+}
+
+
+
+
+  /* CSS styles for the text box container */
+  .custom-text-box {
+    background-image: url(https://wallpapertag.com/wallpaper/full/2/5/d/476044-cream-colored-backgrounds-2880x1800-for-windows-7.jpg);
+    padding: 20px;  
+    border-radius: 20px; 
+    width: 700px;
+    height: 850px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+  }
+
+  .custom-text-box-2 {
+    background-color: #ffffff; 
+    padding: 10px;  
+    border-radius: 5% 5% 15% 5%; 
+    width: 700px;
+    height: 850px;
+    margin-bottom: 10px;
+    padding-left: 120px;
+  }
+
+  .custom-text-box-3 {
+    background-color: #ffffff; 
+    padding: 60px;
+    padding-top: 3px;  
+    border-radius: 5% 5% 15% 5%; 
+    width: 860px;
+    height: 1200px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .custom-text-box-4 {
+    background-color: #ffffff; 
+    padding: 60px;
+    padding-top: 3px;  
+    border-radius: 5% 5% 15% 5%; 
+    width: 860px;
+    height: 1100px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+  }
+  
+  .page {
+    text-align:  center;
+    position: absolute;
+    bottom: 5px; /* Adjust as needed */
+    width: 86%; /* Make it span the width of the container */
+  }
+
+  .align {
+    text-align: right;
+  }
+
+  .custom-line-spacing {
+    line-height: 2;
+  }
+
+</style>
+</head>
+<body>
+  <div class="line-container">
+    <div class="line-left"></div>
+    <div class="line-right"></div>
+    <div class="diamond"></div>
+  </div>
+  <main>
+    <div class="custom-text-box">
+      <font face="Dancing Script">
+        <h1>The</h1>
+        <h1>Notebook</h1>
+      </font>
+    </div>
+    <div class="line-container">
+      <div class="line-left"></div>
+      <div class="line-right"></div>
+      <div class="diamond"></div>
+    </div>
+    <div class="custom-text-box-2">
+      <font face="Josefin Sans">
+      <br>
+      <center><h2 class="centered-text">Table of Contents</h2></center>
+      </font>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <font face="IBM Plex Mono" size="5">
+      <left><h3>I.  Introduction</h3></left>
+      <left><h3>II. Letters</h3></left></font>
+        <div class="flex-container">
+          <div class="column-1">
+          <font face="Josefin Sans">
+            <h2 class="colored-text">1</h2>
+            <h2 class="colored-text">2</h2>
+            <h2 class="colored-text">3</h2>
+            <h2 class="colored-text">4</h2>
+            <h2 class="colored-text">5</h2>
+          </div></font>
+          <div class="column-2">
+            <font face="Lugrasimo">
+            <br>
+            <h3>The Archer - Taylor Swift</h3>
+            <h3>Mirrorball - Taylor Switft</h3>
+            <h3>Perfect - Ed Sheeran</h3>
+            <h3>Those Eyes - New West</h3>
+            <h3>About You - The 1975</h3>
+            </font>
+          </div>
+        </div>
+      </font>
+    </div>
+    <div class="line-container">
+      <div class="line-left"></div>
+      <div class="line-right"></div>
+      <div class="diamond"></div>
+    </div>
+    <div class="custom-text-box-3">
+      <font face="IBM Plex Mono">
+      <center><h2>I</h2></center></font>
+      <font face="Satisfy">
+       <h3><right>Dear Eli,</right></h3>
+        <p>&emsp;&emsp;Happy 18th Birthday! this letter’s for you miss independent, 18 kana ate so marami kanang pwedeng magawa but although being 18 means people see you as an adult and signifies a transition towards adulthood, it doesn’t mean that you have to burden yourself with all the responsibilities and problems that people expect you to overcome… You don’t have to let people determine what maturity is, because not all of us are ready for the sort of adulthood life when we still have longings for teenage fun and peace we all deserve. Take your time to process this change, decide your goals or dreams, choose a career path, and have fun with this next chapter. I’m excited to see more of your talent and potential that I always see in you… all the moments you push yourself to work and perform just to show people how stunning  you already are, the burdens, uncertainties, and problems that you overcome always inspire me and I’m always so proud of you! for being brave with everyday challenges and taking the time to improve your character, so don’t be too hard on yourself, learn to value what you have because there’s so much to be grateful for. You don’t have to keep on pleasing others that don’t see your worth. From now on you’ll be facing more of these future challenges that will surely drain you, but I know that you can handle it, why? because your heart, your mind, and individual self become stronger with each passing day and that’s how great you are. I know how it feels to be overwhelmed by people’s expectations and how life may sometimes be a big environment with multiple battles surrounding you. You see everything, and it occupies your mind more than anything because you know there’s a way for them to figure their way out. Your an amazing woman, and I say woman because you’re capable and courageous of many great things and you aren’t bound by what people think a woman is made for and the world may not see it, but you’re wonderful. Please keep reminding yourself that. Lastly, I also want to share some thoughts to you regarding my perspective of you. It was clear since this summer how much more opportunities you’ve taken that boosted a lot of your potential, You told me you weren’t good at sports yet you still played for your team and that was a good experience you got to have because I know you had fun and formed good bonds with people that I know how you bring enthusiasm and positivity to people just by your great energy. The way you project your talent in singing in public bravely despite the fear you had in those singing competitions and choir performances you do in your church makes me so proud that I don’t have enough words to express… the letters below are some other things I want to share with you, but I’m not great at poetry so I had to reference my thoughts through music relate to you and us. Again, Happy Birthday! I hope you have a wonderful day and make sure to enjoy 😊</p>
+      <h3><div class="align">Sincerely, Chris</div></h3>
+      </font>
+    </div>
+    <div class="line-container">
+      <div class="line-left"></div>
+      <div class="line-right"></div>
+      <div class="diamond"></div>
+    </div>
+    <div class="custom-text-box-4">
+      <font face="IBM Plex Mono">
+        <center><h2>II</h2></center></font>
+        <br>
+        <font face="Satisfy">
+        <center><h2>The Archer</h2></center>
+        <p class="custom-line-spacing">&emsp;&emsp;This song, composed by Taylor Swift, reminds me of how a person can see you but never truly comprehend you... you can see them but not through them. "They see right through me" understates how you miss the underlying feelings and emotions that someone wants to convey but can't because they've built walls around themselves and hide behind a mask of identity that conforms to society and its norms. One can never completely comprehend what someone goes through or what they were made for. A unique woman like you feels so many things, and someone as beautiful and intelligent as you would still think to yourself that you aren't good enough when you are. The way people think you always have to be extraordinary, dependable, hardworking, and always a talented individual because they think that’s the only way to feel special… you look at yourself in the mirror and hate your  reflection, you push yourself through fear of failure just to show others your talent, you always join groups and overwork yourself all to feel like you’re doing something life changing for others. You always give to others but always keep to yourself when someone shows for you. You are “The Archer” , you shoot and express but some things miss, some things never go through and some are misunderstood. I can see right through you… I understand your valid feelings and behavior. There's no need to hide yourself or exhaust your soul when you're with me. Tell me everything you're afraid to speak because I want to better understand your lovely nature. Show me your scars and traumas so that I can treat them compassionately. I can't truly understand your thoughts and emotions, and I'm not sure how long I can hold on, but I'm here to stay and learn as much as I can from you as we both live our lives.</p></font>
+        <font face="IBM Plex Mono"
+        <div class="page">
+          <h3>1</h3>
+        </div>
+        </font>
+    </div>
+    <div class="line-container">
+      <div class="line-left"></div>
+      <div class="line-right"></div>
+      <div class="diamond"></div>
+    </div>
+    <div class="custom-text-box-4">
+      <br>
+      <br>
+      <br>
+      <font face="Satisfy">
+      <center><h2>Mirrorball</h2></center>
+      <p class="custom-line-spacing">&emsp;&emsp;This song speaks about people pleasing and validation seeking. I was concerned about your behavior regarding the way you push yourself to become the light that shines for everyone. the idea of constantly reinventing yourself to meet the needs/expectations of others. the way you used to isolate yourself so nobody is involved with your self destructive behavior. You pressure yourself to go one step further because you seek for outside validation from people who don’t see the value you put in. You stay in performance mode constantly, risking your energy and taking in false criticism. Even when people aren’t paying attention to you, you’re still up there like a Mirrorball shining and trying her best at everything. All you believe you do isn’t a natural and just try, try, and try. The one who change their personality to fit, the one who overthinks a lot, the one who’s unsure of what she is, and the one who at the end of the day is just tired of all these but pretends that it’s fine… My message is just to remind you it’s fine to consistently improve and to hone your talents and skills, but doing for everyone seems like an invalidation to yourself. You are not obligated to be the “bigger person” and invalidate your feelings. The feelings of those who hurt you are not more important that your own. You don’t owe them forgiveness nor understanding. You owe yourself all of that. There are those like me who are here to support you and cheer you on everything you’re learning to do and I’m always proud of what you do for others so be proud of yourself and your achievements as well. Instead of shining for others, reflect on yourself and do your best for you.</p></font>
+      <font face="IBM Plex Mono">
+        <div class="page">
+          <h3>2</h3>
+        </div>
+        </font>
+    </div>
+    <div class="line-container">
+      <div class="line-left"></div>
+      <div class="line-right"></div>
+      <div class="diamond"></div>
+    </div>
+    <div class="custom-text-box-4">
+      <br>
+      <br>
+      <br>
+      <font face="Satisfy">
+      <center><h2>Perfect</h2></center>
+      <p class="custom-line-spacing">&emsp;&emsp;When I first thought of you, I was only gazing upon hallways and doorways. I never knew how important you were to me, until I took the confidence to finally meet a woman like you. I found myself looking for you everywhere, learning more about you, and expecting things like a delulu person. The more I knew, the more I fell, and it was only a matter of moments before seeing and admiring you from afar felt like it wasn’t enough. Every time I saw your performances, I was always so proud to see you shine your brightest. The moments I saw you laughing with the prettiest smile and being really happy with your friends, the enthusiasm and fun energy you show, the kind personality that you have with people, the way you love cute things and smile when you talk about something funny or interesting to you. The calm and soft voice I love to hear when you sing, the smart mind and sharp attitude you have when you teach me something and the prettiest face I always look at when we’re talking. Most importantly, all the city lights that never shine as bright as your eyes. It was the first thing I liked when I saw you… and when I look at you, there aren’t enough hours in the day to appreciate your every detail. You make my days better just by being there and I wait for your messages throughout. There aren’t enough colors in the world to describe your soul. There aren’t enough words for me to convey my thoughts of you. I then remember the one night when I said to myself, how could someone be so perfect? when I saw you in that yellow dress looking so beautiful that I really told myself that I don’t deserve this. Yet when we’re together it’s different but I still find you perfect despite what you think of yourself and I think perfection isn’t something a majority of people who believe in beauty standards make it to be, since everyone is unique every opinion of perfection is meaningless in comparison to self-perspective and to me, you’re perfect the way you are.</p></font>
+      <font face="IBM Plex Mono">
+        <div class="page">
+          <h3>3</h3>
+        </div>
+        </font>
+      </div>
+    <div class="line-container">
+      <div class="line-left"></div>
+      <div class="line-right"></div>
+      <div class="diamond"></div>
+    </div>
+    <div class="custom-text-box-4">
+      <br>
+      <br>
+      <br>
+      <font face="Satisfy">
+      <center><h2>Those Eyes</h2></center>
+      <p class="custom-line-spacing">&emsp;&emsp;When I hear this song, I remember those moments we hung out and I remember your presence that feels so special to me. The small things you do that remind me of why I need you. Looking back at some memories I realized how fun it was being around you. We talked, we laughed, and what felt like minutes was hours. I loved the way you talk about anything with humor and sarcasm that I laugh at and it’s always fun to listen. Whenever I talk and you listen, I notice how much you stare and I end up looking at your eyes all the time cause it’s my favorite thing about you. When I pass by you at school, I notice your perfume and you smell really good, so sometimes I stop for a few seconds just to admire it. I notice that when you’re doing or seeing something fun and exciting, you always jump around or dance randomly and idk, but I find it really cute like it really shows how you react and sometimes I find myself smiling at the sight of those moments. When we were in that bookstore, I admired how much you loved books when you eagerly tried to find specific books and you tell me your opinion about certain ones you liked. I listen to it because I love all your stories, rants, and chikas. I also notice that you sleep a lot and whenever your sleepy you’re eyes squint more and it’s cute to look at especially your mood swing when you’re tired and all you want is a bed to sleep. Most of the times your presence always saves me.  I’m usually alone so all I do is go out by myself and when you’re not around I don’t like people near me for some reason and others drain me. When your around me everything feels different, when we talk I don’t pay attention to my surroundings and all I hear is your voice. Your presence is calm and peaceful, I become myself when I’m with you and even my hands don’t sweat anymore. It’s the feeling of having a home to rest.</p></font>
+      <font face="IBM Plex Mono">
+        <div class="page">
+          <h3>4</h3>
+        </div>
+        </font>
+      </div>
+    <div class="line-container">
+      <div class="line-left"></div>
+      <div class="line-right"></div>
+      <div class="diamond"></div>
+    </div>
+    <div class="custom-text-box-4">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <font face="Satisfy">
+      <center><h2>About You</h2></center>
+      <p class="custom-line-spacing">&emsp;&emsp;One of my favorite songs! the lyrics and calm melody remind me of so many things that are important to me but I cannot remember why or how the connection is so unique. I go out to the city sometimes and visit places we used to go and I remember everything that reminds me of you. From the school hallways, streets, stores, rivers, malls, music, and even places I’ve never been to before during my travels. Everything fun I do, I sometimes wish you were there to experience things together. New places I hope we could visit and spend days with each other. Sometimes I wake up and my first thought is always you and I miss seeing you. Everywhere I am I never know what to think about so I think about you… and It’s still confusing to me how I attached I am because you’re so special in many ways. I can’t really explain but when I saw you doing things you love like reading books, singing songs, sleeping, and teaching, I felt how passionate you are at what you do and it makes you stand out just like your great appearance. You try you’re best at many things and understand me more. So of course you are unique. keep believing in yourself and be confident in the wonderful things about you.</p></font>
+      <font face="IBM Plex Mono">
+        <div class="page">
+          <h3>5</h3>
+        </div>
+        </font>
+      </div>
+  </main>
+  <div class="line-container">
+    <div class="line-left"></div>
+    <div class="line-right"></div>
+    <div class="diamond"></div>
+  </div>
+</body>
+</html>

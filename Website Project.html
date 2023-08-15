@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Domain Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto+Mono:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lugrasimo&family=Roboto+Mono:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lugrasimo&family=Play:wght@700&family=Roboto+Mono:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Mono:wght@300&family=Lugrasimo&family=Play:wght@700&family=Roboto+Mono:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Mono:wght@300&family=Lugrasimo&family=Outfit:wght@100&family=Play:wght@700&family=Roboto+Mono:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Mono:wght@100&family=Indie+Flower&family=Josefin+Sans&family=Lugrasimo&family=Outfit:wght@100&family=Play:wght@700&family=Roboto+Mono:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* Style the body */
+body {
+  font-family:'Lugrasimo', cursive;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Play', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 50px;
+  text-align: center;
+  background-image: url('https://th.bing.com/th/id/OIP.Z0ZDQY88E3CvqxHHnPZGrAHaE6?pid=ImgDet&rs=1');
+  background-size: cover;
+  object-position: top;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 100px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor:pointer;
+  transition: all 0.3s ease 0s;
+}
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 20%;
+  background-image: url('https://wallpaperaccess.com/full/1425874.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-image: url('https://i.pinimg.com/originals/bc/da/b4/bcdab46c9a36278705cab202d01aee47.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+/* CSS styles for the text box container */
+.custom-text-box {
+      background-color: #ffffffb6; 
+      padding: 20px;  
+      border-radius: 15px; 
+      width : 80 px;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
+  gap: 10px; /* Optional: add some space between images */
+  
+}
+
+.image-container img {
+  width: 100%; /* Ensure images fill the grid cells */
+  border-radius: 20px;
+  
+}
+
+.custom-height-cell {
+      height: 300px; /* Set the desired width for this cell */
+     
+    }
+
+.custom-width-cell {
+  grid-column: 3;
+  width: 350px;
+ 
+}
+
+.adjust-1 {
+  transform: rotate(-20deg);
+}
+
+.adjust-2 {
+  transform: rotate(10deg);
+}
+
+.adjust-3 {
+  transform: rotate(-10deg);
+}
+
+.adjust-4 {
+  transform: rotate(15deg);
+}
+
+.adjust-5 {
+  transform: rotate(-10deg);
+}
+
+.adjust-6 {
+  transform: rotate(-10deg);
+}
+
+.adjust-7 {
+  transform: rotate(12deg);
+}
+
+.adjust-8 {
+  transform: scaleX(1.2);
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #fff;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(0, 0, 0) ;
+  object-position: bottom;
+  color: rgb(255, 255, 255);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><font face='Dancing Script' font color='white'>Happy Birthday !</font></h1>
+  <h3><font face='Lugrasimo' font color='white'>a website by Kryz</font></h3>
+</div>
+
+<div class="navbar">
+<font face='Play'>  
+  <a href="Message.html"><b>Home</b></a>
+  <a href="Pictures.html"><b>Collection</b></a>
+  <a href="Info.html" class="right"><b>About</b></a></font>
+</div>
+
+<div class="row">
+  <div class="side">
+<center><font face='IBM Plex Mono' color='black'><h2>Creator Info</h2></center>
+<a href="https://www.facebook.com/brentchrister.lagrio">
+<center><img src='https://scontent.fdvo2-2.fna.fbcdn.net/v/t1.15752-9/362074302_1018777372464605_3786755030602821222_n.jpg?_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFl8PRDjEetwrO9RgbhtE7ROpXElc-SEl86lcSVz5ISX0-pvqX-78Nm7SicEuYWHGyeES6Q7YSzBiJTwMrrMB7i&_nc_ohc=TEKLiBlkYtUAX-P3P7A&_nc_ht=scontent.fdvo2-2.fna&oh=03_AdQ9Dx3lplt7RP_VTO0VJs91_bq5AT95kf6a9zkQfx_ENQ&oe=64E0099C' width=220 height=150 style="border-radius: 15px;"></a></center> 
+    <p><h4><i></i>Email : kryzbrown8@gmail.com</h4></i></p>
+<br>
+    <center><p><h2>More Links</h2></font>
+<font face='Lugrasimo' color='white'><h5><b><i>(Click Images for details)</p></b></h5></i></font></center>
+
+<a href='https://open.spotify.com/playlist/5h6I5l0Ej8hmnMOHx077kF?si=5bfe39fe47d84cf9'>
+<center><img src='https://images.hdqwalls.com/download/spotify-logo-1y-1920x1080.jpg' width=300 height=130 style="border-radius: 15px;"></a></center>
+<br>
+<a href='https://www.tiktok.com/@chicken_a_lacarte?is_from_webapp=1&sender_device=pc'>
+<img src='https://images.wallpapersden.com/image/download/tiktok-logo_bGpsaWiUmZqaraWkpJRnamtlrWZpaWU.jpg' width=300 height=130 style="border-radius: 15px;"></a>
+</div>
+  
+<div class="main">
+    <div class="custom-text-box">
+      <!-- Your text or content goes here -->
+      <p><font face='Indie Flower' color="black"><h3>Welcome to the website, I made a few random things to appreciate this special day  so I hope you'll like it, and feel free to explore the top navbar links, links below and hope you enjoy!</h3></p>
+    </div>
+<br>
+    <div class="image-container">
+  <img class="adjust-1" src="https://images-ext-1.discordapp.net/external/ahGId8ySC22Oyf_pDXcVbuSl-NXPHgWQN7LqD65GS1k/https/i.pinimg.com/originals/75/6b/29/756b290dff5a7fc36d4c56582abb6681.png">
+  <img class="adjust-2" src="https://images-ext-1.discordapp.net/external/cHNjSyDjKNQ0QlbUfR_tE1XCr98N_1_WkfERNWFGGb4/%3F_nc_cat%3D106%26cb%3D99be929b-3346023f%26ccb%3D1-7%26_nc_sid%3Dae9488%26_nc_eui2%3DAeE0688myoHoP6BObmnHYqk-gq7DG4__McWCrsMbj_8xxTakzElDZqWt4smNpIBDZB2OhbD3BSQbDZvwM-2dAhLZ%26_nc_ohc%3DCx6hyVd4sQcAX-Uwcuy%26_nc_ht%3Dscontent.fdvo2-2.fna%26oh%3D03_AdR1LrT_9d1wmi5EUTtqDyVZ-nKybZXfmgr-Io_V_8PF_g%26oe%3D64EC4647/https/scontent.fdvo2-2.fna.fbcdn.net/v/t1.15752-9/357317156_1974712739556198_1445695940833569135_n.jpg?width=421&height=421" width="150" height="200">
+  <img class="adjust-3" src="https://images-ext-1.discordapp.net/external/ViMMes_-nVaDVK5ErRNsJ0JA2iOqMFuJuBYex_OHYTk/%3F_nc_cat%3D107%26cb%3D99be929b-3346023f%26ccb%3D1-7%26_nc_sid%3Dae9488%26_nc_eui2%3DAeHMMmGonv-bp8orT9118SKjVDmpK41cvgNUOakrjVy-A5Kb1R9wRX9ROuGd9gSBVCYZnZkonIT5ymrW1SVIxdD0%26_nc_ohc%3Dpm1DF1pjReQAX_mJX-5%26_nc_ht%3Dscontent.fdvo2-2.fna%26oh%3D03_AdQwDrRQ8Ak7qDUvBdDPFwT5CmFdtXgAOr1XPpm8BIqtHg%26oe%3D64EC3D40/https/scontent.fdvo2-2.fna.fbcdn.net/v/t1.15752-9/353627210_981437379717679_793967858711772560_n.jpg?width=315&height=421" height="350">
+  <img class="adjust-4" src="https://images-ext-2.discordapp.net/external/JMmclb4dVHgVKAiUtEu40DPa_vMKWkw2jJ5XRSt9hTY/%3F_nc_cat%3D108%26cb%3D99be929b-3346023f%26ccb%3D1-7%26_nc_sid%3Dae9488%26_nc_eui2%3DAeGztMuOcdn0TYiWKrQqcBoMe1JOpYSvCpB7Uk6lhK8KkGOOHrHirEbjV2-oqNUx2o-giCSmdhGLgLsCLjcj07PI%26_nc_ohc%3Dtrbc-UmsTJcAX9FaWWz%26_nc_ht%3Dscontent.fdvo2-1.fna%26oh%3D03_AdQPztGezOhJgjfukSE_T4a3l2WOyy_30GmvbUoyRd679w%26oe%3D64EC495F/https/scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/356942882_1004190157608334_341209851023078821_n.jpg?width=421&height=421" height="241">
+  <img src="https://images-ext-1.discordapp.net/external/19JnfLuRRqTV5sbDrXPBcnmL_l_FpdVClpBncp_NK7Y/%3F_nc_cat%3D107%26cb%3D99be929b-3346023f%26ccb%3D1-7%26_nc_sid%3Dae9488%26_nc_eui2%3DAeFC1uMGMomUE1sAIFxbjppqVNyN9dUR04tU3I311RHTi-xymwlC41QUoJdW5yWlvVI2aepF_Qt7o3pMfEBIqtue%26_nc_ohc%3DYlMtIdr0Gi4AX-Kqn-2%26_nc_ht%3Dscontent.fdvo2-2.fna%26oh%3D03_AdQ_7NwKTVsiLU9W4qslE5SHeozaD5wjblsZwocuudeyhg%26oe%3D64EC2F19/https/scontent.fdvo2-2.fna.fbcdn.net/v/t1.15752-9/346101932_1318004745418751_5902141684309110750_n.jpg?width=376&height=420" height="241">
+  <img class="adjust-5" src="https://images-ext-1.discordapp.net/external/YlDWRlUk5qKsY4WBWSGBG5ZzXI5DOaeeKxqQ2RtVje8/%3F_nc_cat%3D100%26cb%3D99be929b-3346023f%26ccb%3D1-7%26_nc_sid%3Dae9488%26_nc_eui2%3DAeFM67LvmvMvqtJvyUwG8uF42311gTvrNonbfXWBO-s2iX-OIekHFRG4DGGSMpf2GIpUVvqRVyLNvdZbJuiv5jc2%26_nc_ohc%3DhM7UUR502VgAX8eC15Q%26_nc_ht%3Dscontent.fdvo2-2.fna%26oh%3D03_AdRqcW4o4obZelZb9DSh18YYbUKyRfr7URGKuTygD1ZSdw%26oe%3D64EC214A/https/scontent.fdvo2-2.fna.fbcdn.net/v/t1.15752-9/356289847_229211810020054_4623418664937750448_n.jpg?width=316&height=421" height="250">
+  <img class='custom-heigth-cell' src="https://images-ext-2.discordapp.net/external/YkDjd0bRgN9HBc1jfTpqswwelWXpJuODsYRWNrVPJKA/https/i.pinimg.com/736x/11/79/f0/1179f0c39195c5cc08027d40aa595d64.jpg?width=311&height=421" height="341">
+  <img class="adjust-6" src="https://images-ext-1.discordapp.net/external/peW8Iq4llxxiM7dFRWCGBxAm9dAhnlRPokdXJL9kbQw/%3Fpid%3DImgDet%26w%3D640%26h%3D618%26rs%3D1/https/th.bing.com/th/id/OIP.Sqdw3BLAzdBmExyMHGVbeQHaHJ?width=436&height=421" height="241">
+  <img class="adjust-7" src="https://images-ext-2.discordapp.net/external/Ta4Jaj4PDBJ73akgiwhS8zkt1OyQsgEHXHmsKN8Rutc/%3Fformat%3Djpg%26name%3Dmedium/https/pbs.twimg.com/media/FY4NCRbaUAA5QfJ?width=316&height=421" height="241">
+  
+</div><br>
+<center><img class="adjust-8" src="https://images-ext-1.discordapp.net/external/tm0c371tQIiA6zmSP9OeP-bTK6msJafJaZU0ezeNL4c/https/i.pinimg.com/originals/4d/49/7c/4d497ce6a07ddfe3ee553752d975e4d0.jpg?width=467&height=421" width="500" height="250" style="border-radius: 15px;"></center>
+</div></font>
+</div>
+
+<div class="footer">
+<font face='Lugrasimo'><h3><i>"Ang buhay parang life, minsan ay sometimes kaya matoto tayo tumanggap ng accept"</i></h3>
+</font></div>
+
+</body>
+</html>
